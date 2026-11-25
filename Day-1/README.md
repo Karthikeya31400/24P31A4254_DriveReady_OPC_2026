@@ -93,8 +93,8 @@ cd Day-1
 python task.py
 ```
 
-### Option 2: Run in Google Colab / Jupyter
-Open `Day1.ipynb` in Google Colab or VS Code Jupyter interactive window, ensure `GEMINI_API_KEY` is added to Colab Secrets, and execute all cells sequentially.
+### Option 2: Run in Google Colab / Interactive Python
+Upload `task.py` to Google Colab or run within an interactive Python session, ensure `GEMINI_API_KEY` is configured in Colab Secrets or environment variables, and execute the script.
 
 ---
 

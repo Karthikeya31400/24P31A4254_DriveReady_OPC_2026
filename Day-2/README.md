@@ -109,8 +109,8 @@ cd Day-2
 python task.py
 ```
 
-### Option 2: Run in Google Colab / Jupyter
-Open `Day2.ipynb` in Google Colab or VS Code Jupyter interactive window and run the cells sequentially.
+### Option 2: Run in Google Colab / Interactive Python
+Upload `task.py` to Google Colab or run within an interactive Python environment, ensure `GEMINI_API_KEY` is configured, and execute the script.
 
 ---
 

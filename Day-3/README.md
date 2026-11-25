@@ -119,8 +119,8 @@ cd Day-3
 python task.py
 ```
 
-### Option 2: Run in Google Colab / Jupyter
-Open `Day3.ipynb` in Google Colab or VS Code Jupyter interactive window and execute all cells sequentially.
+### Option 2: Run in Google Colab / Interactive Python
+Upload `task.py` to Google Colab or an interactive Python environment alongside `test.csv`, ensure `GEMINI_API_KEY` is set, and run the test harness.
 
 ---
 
