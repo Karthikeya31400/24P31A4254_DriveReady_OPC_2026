@@ -21,7 +21,7 @@ Day 2 delves into advanced prompt engineering patterns, few-shot in-context lear
   * **With Explicit Negative Rules (`never promise delivery times; if you do not know, say so.`):** The assistant strictly declines the 1-hour request while clearly enforcing that specific delivery times are never promised.
 
 ### Task 2: Few-Shot In-Context Intent Classification
-* **Implementation:** Zero-temperature classification using 3-shot exemplar message pairs routing queries into three domain categories: `epigraphy`, `route`, or `bug`.
+* **Implementation:** Low-temperature classification using 3-shot exemplar message pairs routing queries into three domain categories: `epigraphy`, `route`, or `bug`.
 * **Few-Shot Exemplars:**
   * `"What does this Brahmi inscription say?"` $\rightarrow$ `epigraphy`
   * `"Tell me about the Alqueva sacred route"` $\rightarrow$ `route`
