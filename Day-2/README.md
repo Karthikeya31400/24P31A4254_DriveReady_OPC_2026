@@ -116,7 +116,7 @@ Upload `task.py` to Google Colab or run within an interactive Python environment
 
 ## Key Observations & Learnings
 
-1. **Few-Shot Prompting Reliability:** Providing just 3 exemplar input-output pairs at `temperature=0` reliably constrained Gemini to output single-label intent classifications without extra conversational filler.
+1. **Few-Shot Prompting Reliability:** Providing just 3 exemplar input-output pairs at `temperature=0.2` reliably constrained Gemini to output single-label intent classifications without extra conversational filler.
 2. **Defensive JSON Cleaning:** Modern LLMs often wrap JSON responses in markdown fences (````json ... ````). Robust parsing requires stripping prefixes and suffixes prior to calling `json.loads`.
 3. **Sliding Window Buffer Trade-offs:**
    * A small buffer (`MAX_TURNS = 2`) conserves tokens and reduces latency but causes catastrophic forgetting of initial user context (such as names and early preferences).
