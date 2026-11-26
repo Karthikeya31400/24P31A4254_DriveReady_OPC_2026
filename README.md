@@ -27,9 +27,13 @@ The program guides engineers from foundational LLM mechanics (temperature, promp
 │   ├── README.md                  # Comprehensive documentation for Day 2
 │   └── task.py                    # Implementation: Few-shot, JSON parsing & memory buffers
 │
-└── Day-3/
-    ├── README.md                  # Comprehensive documentation for Day 3
-    └── task.py                    # Implementation: LCEL chains, automated testing & agent architecture
+├── Day-3/
+│   ├── README.md                  # Comprehensive documentation for Day 3
+│   └── task.py                    # Implementation: LCEL chains, automated testing & agent architecture
+│
+└── Day-4/
+    ├── README.md                  # Comprehensive documentation for Day 4
+    └── task.py                    # Implementation: Tools, Pydantic, Google Sheets & agent tracing
 ```
 
 ---
@@ -41,6 +45,7 @@ The program guides engineers from foundational LLM mechanics (temperature, promp
 | **Day 1** | **LLM Foundations & Prompt Engineering** | • Temperature tuning (`0.2` vs `1.2`)<br>• Grounding & hallucination prevention<br>• Statelessness vs. full conversation history<br>• Token efficiency: English (125) vs Telugu (136)<br>• KLG Ancient World OPC domain adaptation | [`Day-1/task.py`](Day-1/task.py) | [**Day-1 Documentation**](Day-1/README.md) |
 | **Day 2** | **Few-Shot, Structured Outputs & State** | • Negative constraint enforcement<br>• Few-shot intent classification (`epigraphy`, `route`, `bug`)<br>• Zero-shot structured JSON extraction<br>• `@log_call` function decorator & tool auditing<br>• Sliding window buffer comparison (`MAX_TURNS=2` vs `MAX_TURNS=8`) | [`Day-2/task.py`](Day-2/task.py) | [**Day-2 Documentation**](Day-2/README.md) |
 | **Day 3** | **LCEL, Automated Evaluation & Agents** | • Declarative chains with LCEL (`prompt \| llm \| parser`)<br>• Multi-turn `MessagesPlaceholder` state management<br>• Automated testing harness (`run_tests`) with 10/10 (100%) pass rate<br>• Prompt iteration benchmarking (`v1` vs `v3`)<br>• Temperature stability testing (`temperature=1.0`)<br>• System architecture: *Plain Code vs Single LLM vs AI Agent* | [`Day-3/task.py`](Day-3/task.py) | [**Day-3 Documentation**](Day-3/README.md) |
+| **Day 4** | **Tool Calling, Integrations & Agent Tracing** | • Custom `@tool` definition (`get_access_fee`, `is_open`)<br>• Pydantic extraction with `with_structured_output`<br>• External Google Sheets persistence via `gspread`<br>• Broken tool failure diagnosis<br>• Autonomous agent tracing (`create_agent`) & validation error recovery | [`Day-4/task.py`](Day-4/task.py) | [**Day-4 Documentation**](Day-4/README.md) |
 
 ---
 
@@ -56,7 +61,7 @@ The program guides engineers from foundational LLM mechanics (temperature, promp
 ### Installation
 
 ```bash
-pip install -q langchain langchain-core langchain-google-genai openai
+pip install -q langchain langchain-core langchain-google-genai openai pydantic gspread google-auth
 ```
 
 ### Environment Variable Setup
