@@ -31,9 +31,13 @@ The program guides engineers from foundational LLM mechanics (temperature, promp
 │   ├── README.md                  # Comprehensive documentation for Day 3
 │   └── task.py                    # Implementation: LCEL chains, automated testing & agent architecture
 │
-└── Day-4/
-    ├── README.md                  # Comprehensive documentation for Day 4
-    └── task.py                    # Implementation: Tools, Pydantic, Google Sheets & agent tracing
+├── Day-4/
+│   ├── README.md                  # Comprehensive documentation for Day 4
+│   └── task.py                    # Implementation: Tools, Pydantic, Google Sheets & agent tracing
+│
+└── Day-5/
+    ├── README.md                  # Comprehensive documentation for Day 5
+    └── task.py                    # Implementation: RAG (ChromaDB), LangGraph checkpointing & multi-session agent
 ```
 
 ---
@@ -46,6 +50,7 @@ The program guides engineers from foundational LLM mechanics (temperature, promp
 | **Day 2** | **Few-Shot, Structured Outputs & State** | • Negative constraint enforcement<br>• Few-shot intent classification (`epigraphy`, `route`, `bug`)<br>• Zero-shot structured JSON extraction<br>• `@log_call` function decorator & tool auditing<br>• Sliding window buffer comparison (`MAX_TURNS=2` vs `MAX_TURNS=8`) | [`Day-2/task.py`](Day-2/task.py) | [**Day-2 Documentation**](Day-2/README.md) |
 | **Day 3** | **LCEL, Automated Evaluation & Agents** | • Declarative chains with LCEL (`prompt \| llm \| parser`)<br>• Multi-turn `MessagesPlaceholder` state management<br>• Automated testing harness (`run_tests`) with 10/10 (100%) pass rate<br>• Prompt iteration benchmarking (`v1` vs `v3`)<br>• Temperature stability testing (`temperature=1.0`)<br>• System architecture: *Plain Code vs Single LLM vs AI Agent* | [`Day-3/task.py`](Day-3/task.py) | [**Day-3 Documentation**](Day-3/README.md) |
 | **Day 4** | **Tool Calling, Integrations & Agent Tracing** | • Custom `@tool` definition (`get_access_fee`, `is_open`)<br>• Pydantic extraction with `with_structured_output`<br>• External Google Sheets persistence via `gspread`<br>• Broken tool failure diagnosis<br>• Autonomous agent tracing (`create_agent`) & validation error recovery | [`Day-4/task.py`](Day-4/task.py) | [**Day-4 Documentation**](Day-4/README.md) |
+| **Day 5** | **RAG, LangGraph Checkpointing & Multi-Session Agents** | • Vector knowledge ingestion with ChromaDB<br>• RAG search tool (`search_klg_kb`)<br>• LangGraph `InMemorySaver` memory checkpointing<br>• Multi-tenant session isolation (Karthikeya vs Sravani)<br>• Full regression sign-off suite | [`Day-5/task.py`](Day-5/task.py) | [**Day-5 Documentation**](Day-5/README.md) |
 
 ---
 
@@ -61,7 +66,7 @@ The program guides engineers from foundational LLM mechanics (temperature, promp
 ### Installation
 
 ```bash
-pip install -q langchain langchain-core langchain-google-genai openai pydantic gspread google-auth
+pip install -q chromadb langgraph langchain langchain-core langchain-google-genai openai pydantic gspread google-auth
 ```
 
 ### Environment Variable Setup
